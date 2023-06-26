@@ -4,7 +4,7 @@ import { FaBriefcase } from 'react-icons/fa';
 
 const MyTimeline = () => {
     return (
-        <div className=''>
+        <div className='mb-10'>
             <h1>MY TIMELINE</h1>
             <div className='lg:grid lg:grid-cols-2 mt-10 gap-5 lg:ml-10'>
                 <div className="card card-side w-96">

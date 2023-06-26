@@ -1,4 +1,5 @@
 import About from "../../Pages/About/About/About";
+import MyWork from "../../Pages/Work/Mywork/MyWork";
 
 
 const { createBrowserRouter } = require("react-router-dom");
@@ -20,6 +21,10 @@ const { default: Home } = require("../../Pages/Home/Home/Home");
             {
                 path:'about',
                 element:<About></About>
+            },
+            {
+                path:'/work',
+                element:<MyWork></MyWork>
             }
         ]
       }
