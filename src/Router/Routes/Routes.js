@@ -1,4 +1,6 @@
 import About from "../../Pages/About/About/About";
+import Blogs from "../../Pages/Blogs/Blogs";
+import Contact from "../../Pages/Contact/Contact";
 import MyWork from "../../Pages/Work/Mywork/MyWork";
 
 
@@ -25,6 +27,14 @@ const { default: Home } = require("../../Pages/Home/Home/Home");
             {
                 path:'/work',
                 element:<MyWork></MyWork>
+            },
+            {
+                path:'/contact',
+                element:<Contact></Contact>
+            },
+            {
+                path:'/blogs',
+              element:<Blogs></Blogs>
             }
         ]
       }
