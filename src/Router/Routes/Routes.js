@@ -1,6 +1,8 @@
 import About from "../../Pages/About/About/About";
 import Blogs from "../../Pages/Blogs/Blogs";
 import Contact from "../../Pages/Contact/Contact";
+import Login from "../../Pages/Login/Login";
+import Sginup from "../../Pages/Signup/Sginup";
 import MyWork from "../../Pages/Work/Mywork/MyWork";
 
 
@@ -35,6 +37,14 @@ const { default: Home } = require("../../Pages/Home/Home/Home");
             {
                 path:'/blogs',
               element:<Blogs></Blogs>
+            },
+            {
+                path:'/login'
+                ,element:<Login></Login>
+            },
+            {
+                path:'/sginup',
+                element:<Sginup></Sginup>
             }
         ]
       }

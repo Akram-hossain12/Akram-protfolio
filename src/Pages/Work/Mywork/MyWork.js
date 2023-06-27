@@ -12,10 +12,13 @@ import { Link } from 'react-router-dom';
 
 
 
+
+
 const MyWork = () => {
 
     return (
         <div className='mt-14 mb-10 ml-8'>
+            
             <div>
                 <div className='absolute opacity-20 text-[70px] left-1/2 -mt-20 font-bold'>
                     <h2 className='-mb-5'>MY </h2>
@@ -25,10 +28,12 @@ const MyWork = () => {
             </div>
             <p className='mt-10 ml-14 text-lg'>Here is some of my work that I've done in various programming languages.</p>
 
-
+             <div>
+            
+             </div>
             <div className='lg:grid lg:grid-cols-3 gap-5 mt-24'>
 
-                <div className='flex relative border-b-8 w-96 border-lime-500 rounded-md'>
+                <div className='flex relative border-b-8 w-96  border-lime-500 rounded-md'>
                     <img src={img2} className='w-96 h-60' alt="" />
                     <div className='w-96 h-60 bg-lime-500 absolute opacity-0 hover:opacity-90 hover:ease-in hover:delay-150 duration-150 '>
                         <h1 className='text-black text-3xl font-bold mt-5'>Source</h1>

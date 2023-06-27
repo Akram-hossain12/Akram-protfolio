@@ -18,7 +18,7 @@ const AbInformation = () => {
                         </div>
                         <div className="divider divider-vertical">OR</div>
 
-                        <div className="card hover:border-2 mt-10 border-sky-500 delay-200 duration-200 ease-in">
+                        <div className="card hover:border-2 mt-10 border-sky-500 delay-200 duration-200 ease-in-out">
                             <div className="p-3 pb-9">
                                 <h2 className="card-title text-5xl text-blue-600 font-bold">2+</h2>
                                 <p className='mt-4 text-3xl font-semibold'>YEARS OF <br /><span className='ml-16'> EXPERIENCE </span></p>
