@@ -6,10 +6,10 @@ import { toast } from 'react-hot-toast';
 
 const Login = () => {
     const { LoginUser, } = useContext(AuthContext)
-    const [loginError, setLoginError] = useState(null)
+    const [loginError, setLoginError] = useState('')
     const location = useLocation();
     const navigate = useNavigate();
-
+    console.log(loginError)
     const from = location.state?.from?.pathname || '/';
     const hendelLogin = event => {
         event.preventDefault()
@@ -19,6 +19,7 @@ const Login = () => {
         LoginUser(email, password).then(result => {
             const user = result.user;
             console.log(user)
+            setLoginError('')
             toast.success(`Login success ${user?.displayName}`)
             navigate(from, { replace: true });
         })
@@ -64,6 +65,8 @@ const Login = () => {
                                 <input type='submit' value='Login' className="btn btn-primary"></input>
                             </div>
                         </form>
+                        <div className="divider">OR</div>
+                        <button className='btn btn-outline w-full'>CONTINUE WITH GOOGLE</button>
                     </div>
                 </div>
             </div>

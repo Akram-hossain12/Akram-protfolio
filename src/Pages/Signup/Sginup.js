@@ -14,13 +14,16 @@ const Sginup = () => {
         const email = form.email.value;
         const password = form.password.value;
         const name = form.name.value;
+        const photo = form.photo.value;
+        console.log(photo)
 
         createUser(email, password)
             .then(res => {
                 const user = res.user;
                 console.log(user)
                 const userInfo = {
-                    displayName: name
+                    displayName: name,
+                    photoURL:photo
                 }
                 updateUser(userInfo)
                     .then(() => { })
@@ -34,7 +37,7 @@ const Sginup = () => {
     }
     return (
         <div>
-            <div className="hero lg:mt-24">
+            <div className="hero lg:mt-10">
                 <div className="hero-content flex-col ">
                     <div className="text-center lg:text-left">
                         <h1 className="text-5xl font-bold">Please ,SignUp now!</h1>
@@ -66,13 +69,15 @@ const Sginup = () => {
                                 </label>
                                 <input name='password' type="password" placeholder="password" className="input input-bordered" />
                                 <label className="label">
-                                <p>Already have an account? <Link to='/login' href="#" className="label-text-alt link link-hover">Login</Link></p>    
+                                    <p>Already have an account? <Link to='/login' href="#" className="label-text-alt link link-hover">Login</Link></p>
                                 </label>
                             </div>
                             <div className="form-control mt-6">
                                 <input type='submit' value='sginup' className="btn btn-primary"></input>
                             </div>
                         </form>
+                        <div className="divider">OR</div>
+                        <button className='btn btn-outline w-full'>CONTINUE WITH GOOGLE</button>
                     </div>
                 </div>
             </div>
